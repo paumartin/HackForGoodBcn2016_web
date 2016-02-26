@@ -13,3 +13,16 @@
 	background: linear-gradient(#2ecc71, white);
 	height: 200px;
 }
+
+.anuncis {
+	opacity: 0;	
+}
+
+.anuncis img{
+	width: 100px;
+	height: 100px;
+}
+
+.anunci {
+	padding: 10px;
+}
