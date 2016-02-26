@@ -1,0 +1,15 @@
+.bg {
+	background-color: #2ecc71;
+	width: 100%;
+	height: 100%;
+}
+
+.busqueda input{
+	font-size: 250%;
+	height: 70px;
+}
+
+.gradient {
+	background: linear-gradient(#2ecc71, white);
+	height: 200px;
+}
