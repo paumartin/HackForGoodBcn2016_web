@@ -1,5 +1,6 @@
 var backendUrl = "http://54.201.234.52/";
 var press = false;
+var allData = [];
 
 var resizeInput = function(){
      $('.busqueda').css({'margin-top': $('.bg').height() / 2 + 'px'});
@@ -20,6 +21,8 @@ var moveSearchBox = function() {
   	$('.bg').animate({'height': '110' + 'px'},800);
     $('.anuncis').animate({'opacity':'1'},800);
     $('.anuncis').animate({'margin-top':'5rem'},800);
+    $('.title').animate({'opacity' : '0'}, 800);
+    $('.title-mini').animate({'opacity' : '1'}, 800);
     pressed = true;
     // fetch data from backend
     getBackendData();
@@ -112,5 +115,15 @@ $(document).keypress(function(e) {
 });
 $(document).ready(function() {
   resizeInput();
+  $.ajax({url : backendUrl + 'pis/getList',
+    success: function(response) {
+      var content = "";
+      for (var i = 0; i < response.length; i++) {
+        allData.push(response[i].ciutat);
+        allData.push(response[i].titol);
+      }
+      $("#busqueda-input").typeahead({ source:allData });
+    }
+  });
 });
 $(window).resize(resizeInput);
