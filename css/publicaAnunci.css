@@ -1,0 +1,36 @@
+.bg {
+	background-color: #27ae60;
+	width: 100%;
+	height: 100%;
+}
+
+.formulari{
+	margin-top: 30px;
+}
+
+label {
+	color:white;
+	font-weight: bold;
+	font-size: 130%;
+}
+
+input {
+	height: 
+}
+
+h2 {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.help-block {
+	color:white;
+	font-size: 120%;
+}
+
+.tooltip-inner {
+   font-size: 130%;
+   max-width: 500px;
+}
