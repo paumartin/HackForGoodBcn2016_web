@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>Publica un anuncio</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/publicaAnunci.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+</head>
+<body>
+  <div class="bg">
+    <div class="container-fluid">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>REGISTRAR UN ANUNCIO</h2>
+        <form class="formulari">
+          <div class="form-group">
+            <label for="titulo">Titulo del anuncio</label>
+            <input  class="form-control" id="titulo" placeholder="Titulo" data-toggle="tooltip" data-placement="top" title="Ejemplo: Piso en Av. Barcelona a 1 min de la UOC">
+          </div>
+          <div class="form-group">
+            <label for="nombre">Nombre y apellidos</label>
+            <input  class="form-control" id="nombre" placeholder="Nombre y apellidos" data-toggle="tooltip" data-placement="top" title="Ejemplo: Josep Sugrañes Riera">
+          </div>
+          <div class="form-group">
+            <label for="ciudad">Ciudad</label>
+            <input  class="form-control" id="ciudad" placeholder="Ciudad" data-toggle="tooltip" data-placement="top" title="Ejemplo: Barcelona">
+          </div>
+          <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input  class="form-control" id="direccion" placeholder="Dirección" data-toggle="tooltip" data-placement="top" title="Ejemplo: Av. Barcelona nº 68">
+          </div>
+          <div class="form-group">
+            <label for="numero">Número de contacto</label>
+            <input  class="form-control" id="numero" placeholder="Número de contacto" data-toggle="tooltip" data-placement="top" title="Ejemplo: 653 578 965">
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Descripción breve</label>
+            <input  class="form-control" id="descripcion" placeholder="¡Descríbenos en pocas palabras tu piso y tu oferta!" data-toggle="tooltip" data-placement="top" title="Ejemplo: piso con una habitación libre a un minuto andando de la UOC. Mucha luz natural y vecinos poco ruidosos. Se busca a una persona a que le guste conversar sobre todos los tópicos y pasear por la ciudad">
+          </div>
+          <div class="form-group">
+            <label for="genero">Género</label>
+            <div class="btn-group" id="genero">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Hombre <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Otros</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Edat mínima de la compañía</label>
+            <input  class="form-control" id="exampleInputEmail1" placeholder="Edat mínima" data-toggle="tooltip" data-placement="top" title="Edad mínima deseada de la persona con la que se desea convivir. Por ejemplo: 23 años">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Edat máxima de la compañía</label>
+            <input  class="form-control" id="exampleInputEmail1" placeholder="Edat máxima" data-toggle="tooltip" data-placement="top" title="Edad máxima deseada de la persona con la que se desea convivir. Por ejemplo: 30 años">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">Selecciona una imagen de la vivienda</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Selecciona una imagen que identifique la vivienda</p>
+          </div>
+          <button type="submit" class="col-md-8 col-md-offset-2  btn btn-default">Registrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>    
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/publicaAnunci.js"></script>
+</body>
+</html>
