@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/publicaAnunci.css" />
   <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/publicaAnunci.css" />
 </head>
 <body>
   <div class="bg">
@@ -21,8 +21,12 @@
             <input  class="form-control" id="titulo" placeholder="Titulo" data-toggle="tooltip" data-placement="top" title="Ejemplo: Piso en Av. Barcelona a 1 min de la UOC">
           </div>
           <div class="form-group">
-            <label for="nombre">Nombre y apellidos</label>
-            <input  class="form-control" id="nombre" placeholder="Nombre y apellidos" data-toggle="tooltip" data-placement="top" title="Ejemplo: Josep Sugrañes Riera">
+            <label for="nombre">Nombre</label>
+            <input  class="form-control" id="nombre" placeholder="Nombre" data-toggle="tooltip" data-placement="top" title="Ejemplo: Josep">
+          </div>
+           <div class="form-group">
+            <label for="apellidos">Apellidos</label>
+            <input  class="form-control" id="apellidos" placeholder="Apellidos" data-toggle="tooltip" data-placement="top" title="Ejemplo: Sugrañes Riera">
           </div>
           <div class="form-group">
             <label for="ciudad">Ciudad</label>
@@ -41,6 +45,19 @@
             <input  class="form-control" id="descripcion" placeholder="¡Descríbenos en pocas palabras tu piso y tu oferta!" data-toggle="tooltip" data-placement="top" title="Ejemplo: piso con una habitación libre a un minuto andando de la UOC. Mucha luz natural y vecinos poco ruidosos. Se busca a una persona a que le guste conversar sobre todos los tópicos y pasear por la ciudad">
           </div>
           <div class="form-group">
+            <label for="edatMin">Edat mínima de la compañía</label>
+            <input  class="form-control" id="edatMin" placeholder="Edat mínima" data-toggle="tooltip" data-placement="top" title="Edad mínima deseada de la persona con la que se desea convivir. Por ejemplo: 23 años">
+          </div>
+          <div class="form-group">
+            <label for="edatMax">Edat máxima de la compañía</label>
+            <input  class="form-control" id="edatMax" placeholder="Edat máxima" data-toggle="tooltip" data-placement="top" title="Edad máxima deseada de la persona con la que se desea convivir. Por ejemplo: 30 años">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="image">Selecciona una imagen de la vivienda</label>
+            <input type="file" id="image">
+            <p class="help-block">Selecciona una imagen que identifique la vivienda</p>
+          </div>
+           <div class="form-group col-md-3 col-md-offset-1">
             <label for="genero">Género</label>
             <div class="btn-group" id="genero">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -52,19 +69,6 @@
                 <li><a href="#">Otros</a></li>
               </ul>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Edat mínima de la compañía</label>
-            <input  class="form-control" id="exampleInputEmail1" placeholder="Edat mínima" data-toggle="tooltip" data-placement="top" title="Edad mínima deseada de la persona con la que se desea convivir. Por ejemplo: 23 años">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Edat máxima de la compañía</label>
-            <input  class="form-control" id="exampleInputEmail1" placeholder="Edat máxima" data-toggle="tooltip" data-placement="top" title="Edad máxima deseada de la persona con la que se desea convivir. Por ejemplo: 30 años">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputFile">Selecciona una imagen de la vivienda</label>
-            <input type="file" id="exampleInputFile">
-            <p class="help-block">Selecciona una imagen que identifique la vivienda</p>
           </div>
           <button type="submit" class="col-md-8 col-md-offset-2  btn btn-default">Registrar</button>
         </form>
